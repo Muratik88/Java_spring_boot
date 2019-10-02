@@ -19,6 +19,8 @@ public class UserService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
 
+    @Autowired
+    private MailSendler mailSendler;
 //    private final UserRepo userRepo;
 //
 //    public UserService(UserRepo userRepo) {
@@ -41,8 +43,24 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
 
         if (!StringUtils.isEmpty(user.getEmail())){
-
+            String message = String.format(
+                    "Hello, %s ! \n"+
+                            "Welcome to Sweater. Please visit to next link: http://Localhost:8080/activate/%s",
+                    user.getUsername(),
+                    user.getActivationCode()
+            );
+            mailSendler.send(user.getEmail(), "Activation code", message);
         }
+        return true;
+    }
+
+    public boolean activateUser(String code) {
+        User user = userRepo.findByActivationCode(code);
+        if (user == null){
+            return false;
+        }
+        user.setActivationCode(null);
+        userRepo.save(user);
         return true;
     }
 }

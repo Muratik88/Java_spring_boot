@@ -2,5 +2,6 @@
 *.jar
 target
 .idea
+.idea/workspace.xml
 multiInst
 upload/
