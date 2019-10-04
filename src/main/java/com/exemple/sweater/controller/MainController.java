@@ -25,8 +25,10 @@ import java.util.UUID;
 public class MainController {
     @Autowired
     private MessageRepo messageRepo;
+
     @Value("${upload.path}")
     private String uplaodPath;
+
 
     @GetMapping("/")
     public String greeting(Map<String, Object> model) {
@@ -55,7 +57,7 @@ public class MainController {
                       @RequestParam("file")MultipartFile file) throws IOException {
         Message message = new Message(text, tag, user);
         if (file != null && !file.getOriginalFilename().isEmpty()){
-            File uploadDir = new File(uplaodPath);
+            File uploadDir = new File("/tmp" + uplaodPath);
             if (!uploadDir.exists()){
                 uploadDir.mkdir();
             }
@@ -69,7 +71,7 @@ public class MainController {
         Iterable<Message> messages = messageRepo.findAll();
 
         model.put("messages", messages);
-//        model.put("filter", "");
+        model.put("filter", "");
 
         return "main";
     }

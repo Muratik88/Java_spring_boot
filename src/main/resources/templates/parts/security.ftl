@@ -9,5 +9,6 @@
     >
 
 <#else>
-    <#assign name = "unknow" isAdmin = false>
+    <#assign name = "unknow"
+    isAdmin = false>
 </#if>
