@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17d6d952-62bc-4756-9bb2-21871d74dbde" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/ControllerUtils.java" afterDir="false" />
+    <list default="true" id="e36ff7c5-f3d4-4257-8c36-fae73a6cb6a6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/dto/CaptchaResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sweater.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exemple/sweater/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exemple/sweater/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exemple/sweater/domain/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exemple/sweater/domain/Message.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +29,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sweater$Application.ic" NAME="Application Coverage Results" MODIFIED="1568950975736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.exemple.sweater.*</FILTER>
-    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -82,74 +81,56 @@
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sweater@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sweater: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="usr: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RegistrationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state relative-caret-position="84">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/User.java">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="352">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="258">
+              <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="100" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1692">
-              <caret line="106" column="24" lean-forward="true" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding>
-                <element signature="e#2513#2514#0" expanded="true" />
-                <element signature="e#2554#2555#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,21 +141,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user</find>
-      <find>active</find>
-      <find>Message with user meassage</find>
-      <find>filename</find>
-      <find>mult</find>
-      <find>resultFileName</find>
-      <find>addResourceLocations</find>
+      <find>Password confirmation cannot be empty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,51 +156,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/GreetingController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/repos/MessageRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.mustache" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/style.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/MailSendler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/repos/UserRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MailConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.template/V1__Init_DB.sql" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/profile.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/ControllerUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/dto/CaptchaResponseDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -237,29 +175,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="sweater" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="sweater" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="sweater" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -269,10 +190,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="77" />
-    <option name="width" value="1267" />
-    <option name="height" value="879" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="679" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -280,8 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -313,97 +232,26 @@
               <item name="sweater" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="repos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweater" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -411,24 +259,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java_test\sweater\src\main\resources\db\migration" />
-      <recent name="D:\Java_test\sweater\src\main\resources\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java_test\sweater\src\main\resources\templates" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -443,9 +278,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -458,23 +290,26 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <patterns />
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sweater" />
-      <extension name="coverage" sample_coverage="false">
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exemple.sweater.controller.*" />
+          <option name="PATTERN" value="com.exemple.sweater.Application" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.exemple.sweater.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="MakeProject" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -487,7 +322,7 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -498,122 +333,63 @@
       <properties />
       <listeners />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Application" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17d6d952-62bc-4756-9bb2-21871d74dbde" name="Default" comment="" />
-      <created>1568880712955</created>
+      <changelist id="e36ff7c5-f3d4-4257-8c36-fae73a6cb6a6" name="Default" comment="" />
+      <created>1573040598831</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568880712955</updated>
-      <workItem from="1568880718951" duration="1505000" />
-      <workItem from="1568882254206" duration="8034000" />
-      <workItem from="1568945842937" duration="14400000" />
-      <workItem from="1569291950260" duration="30405000" />
-      <workItem from="1569574294713" duration="782000" />
-      <workItem from="1569811978928" duration="55205000" />
-      <workItem from="1570066985120" duration="22235000" />
-      <workItem from="1570421252702" duration="11731000" />
-      <workItem from="1570592858620" duration="5252000" />
-      <workItem from="1570672605400" duration="3310000" />
-      <workItem from="1570762137686" duration="9223000" />
+      <updated>1573040598831</updated>
+      <workItem from="1573040603103" duration="1636000" />
+      <workItem from="1573042808400" duration="9606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162082000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="11242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1044" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.090500645" side_tool="true" weight="0.0" />
-      <window_info anchor="right" id="Maven Projects" order="2" sideWeight="0.4993234" weight="0.0" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32991013" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.24967907" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007553" side_tool="true" weight="0.73569024" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32930514" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32930514" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.90949935" weight="0.03247632" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32882273" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49229783" weight="0.19350474" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32882273" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32882273" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.90949935" visible="true" weight="0.057671383" />
-      <window_info anchor="bottom" id="Spring" order="0" weight="0.03788904" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4987163" weight="0.04570185" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.16240682" />
-      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32991013" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.0608931" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49807444" weight="0.05006766" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5006766" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924472" weight="0.06397306" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.043771043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15256798" />
+      <window_info anchor="right" id="Bean Validation" order="3" weight="0.32930514" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32996634" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.90949935" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.24967907" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4987163" weight="0.29364005" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.090500645" side_tool="true" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49229783" weight="0.19350474" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="2" sideWeight="0.4993234" visible="true" weight="0.021181" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26572528" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32991013" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5006766" side_tool="true" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49807444" weight="0.05006766" />
-      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32991013" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.90949935" weight="0.16238159" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -621,471 +397,192 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://e4936a1f-09ed-4bb6-ac1e-2a7c4f5e8d43/database/sweater/schema/public/table/usr">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e4936a1f-09ed-4bb6-ac1e-2a7c4f5e8d43/database/sweater/schema/public/table/user_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar!/org/postgresql/jdbc/PgConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-470">
-          <caret line="987" selection-start-line="987" selection-end-line="987" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e4936a1f-09ed-4bb6-ac1e-2a7c4f5e8d43/database/sweater/schema/public/table/message">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/Entity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/GeneratedValue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/annotation/Target.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/annotation/Retention.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/ManyToOne.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.1.8.RELEASE/spring-context-support-5.1.8.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="217" column="22" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/85155b2e-0b6d-49a6-974c-68b57b8ce9ad.Koala.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="66" column="55" selection-start-line="66" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.9.RELEASE/spring-data-jpa-2.1.9.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userList.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="218" selection-start-line="218" selection-end-line="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/2ef4f395-9cb5-42e8-9511-a70124d7c937.1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/11ccea04-a0b7-4c84-a9bc-c561c7fa9ae8.Chrysanthemum.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/b9b7e3f4-ed57-4f85-ae8a-477da2ca182c.Penguins.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="18" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/profile.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MailConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#538#563#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="-20">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_passwords.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="261" column="42" selection-start-line="261" selection-start-column="42" selection-end-line="261" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25d0a01b-5a98-49f1-822b-59693304f945/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://3f121f8a-2fe9-4a8f-8ea3-aab543e2f316/database/sweater/schema/public/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/repos/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3f121f8a-2fe9-4a8f-8ea3-aab543e2f316/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/MailSendler.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/ControllerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1019#1035#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="100" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="100" />
-        </state>
+        <state relative-caret-position="-360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="106" column="24" lean-forward="true" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-          <folding>
-            <element signature="e#2513#2514#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        <state relative-caret-position="-140">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/ControllerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        <state relative-caret-position="80">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userList.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="280">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/domain/dto/CaptchaResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/sweater/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>vaadin-6.8.9</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>sweater</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
